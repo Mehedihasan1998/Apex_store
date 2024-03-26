@@ -1,4 +1,4 @@
-class ShoeModel{
+class ShoeModel {
   String shoeName;
   String img;
   double rating;
@@ -13,5 +13,10 @@ class ShoeModel{
     required this.brandName,
     required this.img,
     required this.description,
-});
+  });
+}
+class CategoryModel {
+  String name;
+  String icon;
+  CategoryModel({required this.name, required this.icon});
 }

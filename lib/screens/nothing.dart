@@ -1,4 +1,4 @@
-import 'package:apex_store/screens/category.dart';
+import 'package:apex_store/screens/favourites.dart';
 import 'package:apex_store/screens/home_screen.dart';
 import 'package:apex_store/screens/profile.dart';
 import 'package:apex_store/screens/search.dart';
@@ -17,7 +17,7 @@ class _NothingPageState extends State<NothingPage> {
   final tabs = [
     HomeScreen(),
     SearchPage(),
-    CategoryPage(),
+    FavouritePage(),
     ProfilePage(),
   ];
 

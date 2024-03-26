@@ -1,5 +1,5 @@
 import 'package:apex_store/common/common.dart';
-import 'package:apex_store/screens/category.dart';
+import 'package:apex_store/screens/favourites.dart';
 import 'package:apex_store/screens/home_screen.dart';
 import 'package:apex_store/screens/profile.dart';
 import 'package:apex_store/screens/search.dart';
@@ -13,11 +13,11 @@ class HomeStructure extends StatefulWidget {
 }
 
 class _HomeStructureState extends State<HomeStructure> {
-  int _currentIndex = 0;
+
   final tabs = [
     HomeScreen(),
     SearchPage(),
-    CategoryPage(),
+    FavouritePage(),
     ProfilePage(),
   ];
 
@@ -26,7 +26,7 @@ class _HomeStructureState extends State<HomeStructure> {
     final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: secondaryColor.withOpacity(0.8),
+        backgroundColor: secondaryColor,
         appBar: AppBar(
           title: Image.asset(
             "assets/images/nike.png",
@@ -44,9 +44,9 @@ class _HomeStructureState extends State<HomeStructure> {
             ),
           ],
         ),
-        body: tabs[_currentIndex],
+        body: tabs[currentIndex],
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
+          currentIndex: currentIndex,
           backgroundColor: primaryColor,
           showSelectedLabels: false,
           showUnselectedLabels: false,
@@ -56,7 +56,7 @@ class _HomeStructureState extends State<HomeStructure> {
           iconSize: 22,
           elevation: 5,
           selectedIconTheme: IconThemeData(
-            size: 26,
+            size: 24,
           ),
           unselectedIconTheme: IconThemeData(
             size: 22,
@@ -64,12 +64,12 @@ class _HomeStructureState extends State<HomeStructure> {
           items: [
             customBottomNavigationBarItem("Home", Icon(Icons.home)),
             customBottomNavigationBarItem("Search", Icon(Icons.search)),
-            customBottomNavigationBarItem("Category", Icon(Icons.category)),
+            customBottomNavigationBarItem("Favourite", Icon(Icons.favorite)),
             customBottomNavigationBarItem("Profile", Icon(Icons.person)),
           ],
           onTap: (index) {
             setState(() {
-              _currentIndex = index;
+              currentIndex = index;
             });
           },
         ),
@@ -82,13 +82,13 @@ class _HomeStructureState extends State<HomeStructure> {
     return BottomNavigationBarItem(
       label: label,
       activeIcon: Container(
-          height: 40,
-          width: 40,
+          height: 35,
+          width: 55,
           decoration: BoxDecoration(
             color: secondaryColor,
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(15),
           ),
-          child: icon),
+          child: icon,),
       icon: icon,
     );
   }
