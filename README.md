@@ -1,16 +1,9 @@
 # apex_store
 
-A new Flutter project.
+Apps overview
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![1](https://github.com/Mehedihasan1998/Apex_store/assets/56060082/816ca10d-1145-45c0-9b16-3ecd82b56233)
+![2](https://github.com/Mehedihasan1998/Apex_store/assets/56060082/23b6c672-e05f-4503-beb1-92a9bdd41635)
+![3](https://github.com/Mehedihasan1998/Apex_store/assets/56060082/488e393f-c9e0-43ec-86f6-452f3445df8f)
+![4](https://github.com/Mehedihasan1998/Apex_store/assets/56060082/44e6223a-f96a-4f8b-b175-ddce30b8e514)
+![5](https://github.com/Mehedihasan1998/Apex_store/assets/56060082/bf9bb26b-db21-4bb5-b35a-db0ea85b434b)
